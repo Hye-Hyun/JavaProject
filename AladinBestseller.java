@@ -53,10 +53,11 @@ public class AladinBestseller {
                 Thread.sleep(300);
             }
 
-            System.out.println("✅ 베스트셀러 수집 완료");
+            System.out.println("베스트셀러 수집 완료");
 
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
 }
+
