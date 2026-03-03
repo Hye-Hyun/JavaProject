@@ -57,7 +57,7 @@ public class BookDetailDialog extends JDialog{
 		writeBtn.setAlignmentX(Component.CENTER_ALIGNMENT);
 		
 		writeBtn.setPreferredSize(new Dimension(100, 30));
-		writeBtn.setMaximumSize(new Dimension(100, 30));  // ⭐ 이게 핵심
+		writeBtn.setMaximumSize(new Dimension(100, 30));  
 		writeBtn.setMinimumSize(new Dimension(100, 30));
 
 		writeBtn.addActionListener(e -> {
@@ -90,3 +90,4 @@ public class BookDetailDialog extends JDialog{
 		return new ImageIcon(img);
 	}
 }
+
