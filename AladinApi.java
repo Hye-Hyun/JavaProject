@@ -18,14 +18,13 @@ public class AladinApi {
         int skippedCount = 0;  // 중복으로 스킵된 책 수
 
         try {
-            // 🔹 사람들이 실제로 많이 읽는 키워드 위주
+            
             String[] keywords = {
                 "소설", "에세이", "자기계발", "인문", "심리", "힐링"
             };
 
             for (String keyword : keywords) {
 
-                // 🔹 페이지 수 늘림 (키워드당 60권)
                 for (int page = 1; page <= 6; page++) {
 
                     String apiUrl =
@@ -86,15 +85,14 @@ public class AladinApi {
                         }
                     }
 
-                    // 🔥 API 호출 제한 방지
                     Thread.sleep(400);
                 }
             }
 
             System.out.println("=================================");
-            System.out.println("📚 알라딘 데이터 수집 완료");
-            System.out.println("➕ 새로 저장된 책: " + insertedCount + "권");
-            System.out.println("⏭ 중복으로 스킵된 책: " + skippedCount + "권");
+            System.out.println("알라딘 데이터 수집 완료");
+            System.out.println("새로 저장된 책: " + insertedCount + "권");
+            System.out.println("중복으로 스킵된 책: " + skippedCount + "권");
             System.out.println("=================================");
 
         } catch (Exception e) {
@@ -102,3 +100,4 @@ public class AladinApi {
         }
     }
 }
+
